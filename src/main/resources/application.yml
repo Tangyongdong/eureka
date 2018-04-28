@@ -9,5 +9,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${spring.application.name}:${server.port}/eureka/
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false #是否注册自己
+    fetch-registry: false #是否检索服务

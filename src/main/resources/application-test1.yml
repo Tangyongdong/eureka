@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: test-eureka
+
+server:
+    port: 8761
+
+eureka:
+  instance:
+    hostname: test1
+  client:
+    serviceUrl:
+      defaultZone: http://test2:8762/eureka/
+    register-with-eureka: false
+    fetch-registry: false
